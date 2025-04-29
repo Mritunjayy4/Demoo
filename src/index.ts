@@ -27,7 +27,7 @@ app.use("/recipes", require("./routes/recipes"));
 async function startServer() {
   try {
     // Load express app to listen on config port.
-    const port = 3000
+    const port = 3001
     server = app.listen(port, () => {
       console.log(`Service ready on :${port}`)
     });
