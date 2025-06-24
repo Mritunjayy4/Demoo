@@ -44,6 +44,7 @@ export async function getRecipe(req, res) {
       ],
       image: "https://www.budgetbytes.com/wp-content/uploads/2022/07/Chicken-Alfredo-bowl.jpg",
       difficulty: "Easy", // Added new field for CI test
+      servings: 4, // New feature field for CI test
     }, res);
 
   } catch (error) {
