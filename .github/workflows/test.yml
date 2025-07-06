@@ -1,4 +1,4 @@
-name:  Test Project
+name: Test Project
 
 on:
   pull_request:
@@ -12,6 +12,7 @@ jobs:
       image: node:20
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm ci
